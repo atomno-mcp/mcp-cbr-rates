@@ -5,7 +5,7 @@ description = "MCP server for Central Bank of Russia (CBR) data: currency rates,
 readme = "README.md"
 license = { text = "MIT" }
 authors = [
-    { name = "atomno-labs", email = "hello@atomno-labs.ru" },
+    { name = "atomno-mcp", email = "hello@atomno-mcp.ru" },
 ]
 keywords = ["mcp", "model-context-protocol", "cbr", "ru", "fintech", "currency", "rates", "atomno"]
 classifiers = [

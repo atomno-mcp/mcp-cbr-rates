@@ -193,7 +193,7 @@ class CbrClient:
         http_client: httpx.AsyncClient | None = None,
         *,
         timeout: float = DEFAULT_TIMEOUT,
-        user_agent: str = "mcp-cbr-rates/0.1 (+https://github.com/atomno-labs/mcp-cbr-rates)",
+        user_agent: str = "mcp-cbr-rates/0.1 (+https://github.com/atomno-mcp/mcp-cbr-rates)",
     ) -> None:
         self._owns_client = http_client is None
         self._client = http_client or httpx.AsyncClient(

@@ -19,7 +19,7 @@
   <img width="380" height="200" src="https://glama.ai/mcp/servers/atomno-mcp/mcp-cbr-rates/badge" alt="mcp-cbr-rates MCP server" />
 </a>
 
-`mcp-cbr-rates` is part of the [atomno](https://atomno-labs.ru) family of MCP
+`mcp-cbr-rates` is part of the [atomno](https://atomno-mcp.ru) family of MCP
 servers focused on the Russian fintech ecosystem. It is fully open-source,
 requires no API keys, and is built on top of the official public CBR
 endpoints.

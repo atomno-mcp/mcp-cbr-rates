@@ -120,7 +120,7 @@ def build_tool_context() -> tuple[ToolContext, httpx.AsyncClient]:
     http_client = httpx.AsyncClient(
         timeout=timeout,
         headers={
-            "User-Agent": f"mcp-cbr-rates/{__version__} (+https://github.com/atomno-labs/mcp-cbr-rates)",
+            "User-Agent": f"mcp-cbr-rates/{__version__} (+https://github.com/atomno-mcp/mcp-cbr-rates)",
             "Accept": "application/xml,text/xml,*/*",
         },
         transport=httpx.AsyncHTTPTransport(retries=2),
