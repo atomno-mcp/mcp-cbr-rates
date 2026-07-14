@@ -1,18 +1,18 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.atomno-mcp/mcp-cbr-rates",
+  "name": "mcp-cbr-rates",
   "description": "CBR exchange rates and key rates for Russia. MCP tools for finance agents.",
   "repository": {
     "url": "https://github.com/atomno-mcp/mcp-cbr-rates",
     "source": "github"
   },
-  "version": "0.1.4",
+  "version": "0.1.8",
   "packages": [
     {
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
       "identifier": "atomno-mcp-cbr-rates",
-      "version": "0.1.4",
+      "version": "0.1.8",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
