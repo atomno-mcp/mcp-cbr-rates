@@ -1,6 +1,6 @@
 [project]
 name = "atomno-mcp-cbr-rates"
-version = "0.1.9"
+version = "0.1.10"
 description = "MCP server for Central Bank of Russia (CBR) data: currency rates, key rate, inflation, macro stats."
 readme = "README.md"
 license = { text = "MIT" }
