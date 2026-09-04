@@ -164,10 +164,15 @@ class _InflationTableParser(HTMLParser):
 
 
 def _parse_ru_month_year(raw: str) -> tuple[int, int] | None:
-    """Parse strings like 'март 2026' / 'марта 2026'. Returns (year, month)."""
+    """Parse CBR month labels such as ``март 2026`` or ``03.2026``."""
     if not raw:
         return None
-    parts = raw.lower().replace("\xa0", " ").split()
+    normalized = raw.lower().replace("\xa0", " ").strip()
+    numeric_match = re.fullmatch(r"(0?[1-9]|1[0-2])\.(\d{4})", normalized)
+    if numeric_match:
+        return int(numeric_match.group(2)), int(numeric_match.group(1))
+
+    parts = normalized.split()
     if len(parts) != 2:
         return None
     month_name, year_str = parts
@@ -408,5 +413,9 @@ class CbrClient:
                     "month": str(month),
                     "cpi_yoy_pct": inflation_text,
                 }
+            )
+        if not results:
+            raise CbrParseError(
+                "CBR inflation table contained no recognizable monthly observations"
             )
         return results
